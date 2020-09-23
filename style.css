@@ -73,3 +73,6 @@ body {
   display: inline;
   padding: 5%;
 }
+.contact a:hover {
+  background-color: rgba(0.3, 66, 245, 126);
+}
