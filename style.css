@@ -1,13 +1,13 @@
 * {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-  color: rgb(99, 128, 128);
+  color: rgb(216, 203, 192);
 }
 html,
 body {
   margin: 0;
   padding: 0;
-  background-image: url("https://images.pexels.com/photos/964547/pexels-photo-964547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-image: url("https://images.pexels.com/photos/373914/pexels-photo-373914.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
   background-size: cover;
 }
 .name {
@@ -31,7 +31,7 @@ body {
 .nav a {
   display: inline;
   padding: 0.5em;
-  color: rgb(10, 209, 159);
+  color: rgb(39, 228, 181);
   text-decoration: none;
 }
 .nav a:hover {
@@ -55,7 +55,7 @@ h2 {
 }
 .work {
   text-align: center;
-  color: rgb(41, 141, 148);
+  color: rgb(216, 203, 192);
   font-size: large;
   font-weight: 600;
   font-family: "Josefin Sans", sans-serif;
