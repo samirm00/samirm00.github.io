@@ -1,13 +1,14 @@
 * {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-  color: white;
+  color: rgb(99, 128, 128);
 }
 html,
 body {
   margin: 0;
   padding: 0;
-  background-image: url("https://images.pexels.com/photos/5412/water-blue-ocean.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("https://images.pexels.com/photos/964547/pexels-photo-964547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
 }
 .name {
   text-align: center;
@@ -30,11 +31,11 @@ body {
 .nav a {
   display: inline;
   padding: 0.5em;
-  color: white;
+  color: rgb(10, 209, 159);
   text-decoration: none;
 }
 .nav a:hover {
-  background-color: rgba(0.3, 214, 217, 35);
+  background-color: rgb(74, 97, 99);
 }
 .my-image {
   display: block;
@@ -48,13 +49,13 @@ body {
 h2 {
   text-align: center;
   font-size: 1.2em;
-  color: rgb(26, 192, 40);
+  color: rgb(26, 192, 81);
   font-weight: 600;
   font-family: cursive;
 }
 .work {
   text-align: center;
-  color: whitesmoke;
+  color: rgb(41, 141, 148);
   font-size: large;
   font-weight: 600;
   font-family: "Josefin Sans", sans-serif;
