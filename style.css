@@ -68,6 +68,9 @@ h2 {
   display: inline;
   padding: 5%;
 }
+.logo {
+  width: 50px;
+}
 .work a:hover {
   background-color: rgba(0.3, 66, 245, 126);
 }
