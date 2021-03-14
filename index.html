@@ -1,72 +1,176 @@
-<!-- index page code -->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!-- link to  style page and meta tages  -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./Images/icon.png" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <meta charset="UTF-8" />
-    <meta name="description" content=" Samir's web page " />
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Portfolio</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />  
+    <link rel="stylesheet" href="public/style.css">
   <body>
-    <!--Body header with navigation links -->
-    <header>
-      <h1 class="name">
-        <i>Hello, I am Samir , welcome to my Web page</i>
-      </h1>
-      <nav class="nav">
-        <!--unordered list with a tages  -->
-        <ul>
-          <li>
-            <b><a href="index.html">Home</a></b>
-          </li>
-          <li>
-            <b><a href="Geology.html">Geology</a></b>
-          </li>
-          <li>
-            <b><a href="Coding.html">Coding</a></b>
-          </li>
-          <li>
-            <b><a href="Aboutme.html">About Me</a></b>
-          </li>
+
+      <!--Header , logo and navigation bar -->
+      <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" id ="toggleMenu"></div>
+        <ul class="nav-bar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
         </ul>
-      </nav>
-    </header>
-    <!-- body main part -->
-    <main>
-      <!-- a new section , insert an image -->
-      <div>
-        <img class="my-image" src="./Images/samir.jpg" alt="Samir Photo" />
+      </header>
+  
+      <!--Home section  -->
+      <section class="first-ban" id="home">
+        <div class="text-box">
+          <h2>Hello, I am <br><br><span>Samir</span> </h2><br>
+          <h3>I'm a web developer</h3>
+          <a href="#about" class="btn">About Me</a>
+        </div>
+  
+        <!--About  section  -->
+      </section>
+      <section class="about" id="about">
+        <div class="head">
+          <h2>About Me</h2>        
+        </div>
+        <div class="text">
+          <div class="text-content text-second">
+            <h3>Iam a Web developer</h3><br><br> 
+            <p>
+              I am a <span class="text-important">full-stack web developer</span>, my main concern is building Creative websites
+              using  clean and efficient code. <br><br>
+              <span class="text-important">Web-Design</span> : Figma.<br><br>
+              <span class="text-important">Front-End</span> :  HTML, CSS, and JavaScript. <br><br> 
+              <span class="text-important">Back-End</span> : JavaScript, PhP and Python. <br><br>
+              I am also very interested in <span class="text-important">Data Analytics and Data Science</span> (Python).<br><br>
+              I am a <span class="text-important">Geologist</span> with two Master's degrees (Damascus university and Université Libre de Bruxelles).  
+            </p>
+          </div>
+          <div class="text-second">
+            <img class="img" src="public/assests/pexels-photo-848117.jpeg" alt="keyboard" height="650" width="800">
+          </div>
+        </div>
+      </section>
+      
+<!--Services section  -->
+    <section class="services " id="services">
+      <div class="head white">
+        <h2>Services</h2>  
+        <p>
+          My main work in web design, web development and coding with three main languages (JavaScript, PhP and Python).  
+        </p>      
       </div>
+      <div class="text-content">
+          <div class="servicesBox">
+            <img src="public/assests/icon1.png" alt="">
+            <h2>Web Design</h2>
+            <p>
+              Creative stylish websites and application using Figma and Adobe-Xp.
+            </p>
+          </div>
+          <div class="servicesBox">
+            <img src="public/assests/icon2.png" alt="">
+            <h2>Websites</h2>
+            <p>
+              Working on both Front-End and Back-End.
+            </p>
+          </div>
+          <div class="servicesBox">
+            <img src="public/assests/icon3.png" alt="">
+            <h2>Applications</h2>
+            <p>
+              Building Application mainly using JavaScript.
+            </p>
+          </div>
+      </div>
+    </section>
 
-      <h2>Samir MOHAMMAD</h2>
-      <br />
+<!--Work section  -->     
+    <section class="work" id="work">
+        <div class="head">
+          <h2>Work</h2>  
+          <p>
+            Here, you can find some of my work, to view more please <span class="text-important"> go to my GitHuB account </span> by clicking the button bellow!              
+          </p>      
+        </div>
+        <div class="projects" id="projects"></div>          
+        <div class="head">
+          <a href="https://github.com/samirm00?tab=repositories"  target="_blank" class="btn">View More ON MY GITHUB</a>
+        </div>
+      </section>
+      
+<!--Contact section  -->
+<section class="contact" id="contact">
+  <div class="head white">
+    <h2>Conatct Me</h2>
+    <p>
+      Feel Free to contact me and <span  class="text-important">let us make the world of programming better!</span>
+    </p>
+  </div>
+  <div class="text-content  display-content" >
+    <div class="contactInfo">
+      <h3>Contact Info</h3>
+      <div class="contactBox">
+        <div class="box">
+          <div class="icon">
+            <i  class="fa fa-map-marker"></i>
+          </div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>Rue du Métal, 6 <br> 1060 Brussels</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i  class="fa fa-phone"></i>
+          </div>
+          <div class="text">
+            <h3>Phone</h3>
+            <p>0032/489745410</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i  class="fa fa-envelope"></i>
+          </div>
+          <div class="text">
+            <h3>E-mail</h3>
+            <p>sammoham.be@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="formBx">
+      <form >
+        <h3>Message Me</h3>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="E-mail">
+        <textarea placeholder="Your Message"></textarea>
+        <input type="submit" value="Send">
+      </form>
+      
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-container">
+    <p>Copyright &copy; 2021 .All Rights Reserved</p>
+    <div class="soical-networks">
+      <a  target="_blank" href="https://www.linkedin.com/in/samir-m-592b69195/"><i class="fab fa-linkedin  fa-2x "></i>  </a>
+      <a  target="_blank" href="https://github.com/samirm00"><i class="fab fa-github-square fa-2x "></i></a>
+      <a  target="_blank" href="https://www.researchgate.net/profile/Samir_M"><i class="fab fa-researchgate fa-2x "></i></a>
+    </div>
+  </div>
+</footer>
+    <!-- initialize your application -->
+    <script type="module" src="./src/init/index.js"></script>
 
-      <p class="work">
-        Geologist : Master in geology (Damascus University) & Master in geology
-        (Université Libre de Bruxelles). <br /><br />
-
-        Geology teacher : worked for five years as a geology teacher in
-        Kuwait.<br /><br />
-        Coder : Python , MATLAB , MySQL and currently doing a Bootcamp (Web
-        developer) in HackYourFuture (Belgium).<br /><br />
-
-        Language learner : Kurdish , Arabic , English , French and currently ,
-        learning Dutch.
-      </p>
-    </main>
+    <!--load the review buttons for your live deployment 
+    <script type="module" src="./lib/review-buttons.js"></script>
+    -->
   </body>
 </html>

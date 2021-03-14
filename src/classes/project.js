@@ -1,45 +1,10 @@
-# Portfolio
-
-> A personal portfolio to introduce the world and let them know more about me and my work.
-
-## Table of contents
-
-- [General info](#general-info)
-- [Screenshots](#screenshots)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Features](#features)
-- [Status](#status)
-- [Inspiration](#inspiration)
-- [Contact](#contact)
-
-## General info
-
-A personal portfolio includes all the inforamtion about my work , contact information.
-
-## Screenshots
-
-![Example screenshot](public/assests/screenShot.png)
-
-## Technologies
-
-- JavaScript
-- HTML
-- CSS
-- VSC code
-
-## Setup
-
-## Code Examples
-
-```js
 "use strict";
 
 export class Project {
-  constructor(id, name, link) {
+  constructor(id, name, html_url) {
     this.id = id;
     this.name = name;
-    this.link = link;
+    this.link = html_url;
   }
 
   render() {
@@ -80,8 +45,9 @@ export class Project {
 
     const projectLink = document.createElement("a");
     projectLink.classList.add("project-link");
-
+    projectLink.innerHTML = `${this.name} <i class="fas fa-paperclip"></i>`;
     projectLink.href = `${this.link}`;
+    projectLink.target = "_balnk";
 
     // append to the to description DIV
 
@@ -93,27 +59,3 @@ export class Project {
     return parentDiv;
   }
 }
-```
-
-## Features
-
-List of features ready and Todos for future development
-
--
--
--
-
-To-do list:
-
--
--
-
-## Status
-
-Project is: _in progress_
-
-## Inspiration
-
-## Contact
-
-By [Samir]
